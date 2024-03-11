@@ -1,4 +1,4 @@
-import { Box, Grid, Hidden, Typography } from "@mui/material";
+import { Box, Grid, Button, Typography } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -12,6 +12,12 @@ import BestSellerCards from "./components/BestSellerCards";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import CommentIcon from "@mui/icons-material/Comment";
+import CallIcon from '@mui/icons-material/Call';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
 import "./App.css";
 
 function App() {
@@ -153,9 +159,9 @@ function App() {
       imageUrl:
         "https://s3-alpha-sig.figma.com/img/679b/3cdf/17b8ec542ce1c452944dfb51f10ba010?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JKaE2ykMdJRV0wOqKV5T01HpLGew5iDTUln~ZPJEZzggXv-7in319BE6kHVQMbQ5Mt-3yJiE2McUck4E0anMiGV85q~LPoAtbeKB0WK-Sph3dcguNHDykLYoH8OzeCKud3n1uprCnzWzh37SkdjXrz5mcFGIRlWtspdo81osW9FUmYI3Ox8d3HwOgbqlFOynOmSlLGlmg769cBFJYcDDhWeLH-1EPzbcWh70uFb8JyEopIGW15wSzdcWXWi70t69e2LBRVTCsqibtofB7W4beQ5xaF2419UvFlgpaZfvzQExd9TiCxkmLu-fimmtpjJqYv2l4oqy~qoHLpDxtgPKHg__",
       categories: ["Google", "Trending", "New"],
-      heading: "Loudest à la Madison #1 (L'integral)",
+      heading: "Loudest à la Madison #1 (L,integral)",
       explanation:
-        "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+        "We focus on ergonomics and meeting you where you work. Its only a keystroke away.",
       time: "22 April 2021",
       comments: 10,
     },
@@ -163,9 +169,9 @@ function App() {
       imageUrl:
         "https://s3-alpha-sig.figma.com/img/412d/5bc5/d51defa7e9522a5eb5f534d0442131b2?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OCdT5X24T2gfL3qr0EAnpnVvGjg63b6~BHdxhz-Dsr94~1ZYpc4-~GGbvnzFAVU4cwsBA1hnNdgkGtZ-TyYDSwdXe5wr9-uEOu852Bx-IFMkZ4VSBmOypHXXGYkI8YI83skF3GwNlAFyWyLzgqt1I5kB3y6AP4OynFX6BQeQqDgtwOYoT7c7EcKADafz0v~WjeaCYKzwcBgjIiQ2XmJZlBYBjNvpDP1li7DOMNcXRLCXkd-EaC5U2f-XOyfTcevm29DY9DA-bTEjbkLulwKRAvJTX-AFF9SDwhbWVmjoclF0iblNosM7Yl3fd0lWsyAe2plHoQObNgsBi4zRV65nOA__",
       categories: ["Google", "Trending", "New"],
-      heading: "Loudest à la Madison #1 (L'integral)",
+      heading: "Loudest à la Madison #1 (L,integral)",
       explanation:
-        "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+        "We focus on ergonomics and meeting you where you work. Its only a keystroke away.",
       time: "22 April 2021",
       comments: 10,
     },
@@ -173,9 +179,9 @@ function App() {
       imageUrl:
         "https://s3-alpha-sig.figma.com/img/af91/645f/60a447510f7b4e8aa158f122b0d1fe29?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GGfodYFg8m24glmMok~wmUFo0gGTDPveBL8jvak1rTqfkzg-hkDvf7P-AE97xFKiqgdYRPwN-PzgcxDKb8yW6ej2fMI81pplCK92gzx6Pe19XpP8X1so4a43c7H7LQnfiU7cGyeN4yGzQGzCuxzmtZ5CTlbWAy7ccIGvn~YxP~lsbLuafDk4tsqqD2SOxSc~z47XSKVO6trKkApBhywoww5YO2jXenrrJh8eC7mrtYe4LtoAhcRClU3fhQtAjwKUaq70LkLCYRPlAcJbrnIY1cIN-vSw5Cky93yu8h0UHBuj~5rL-xe9XC0qWAZhAVzFd3~Ih3mBvP-OL29IvBVRHw__",
       categories: ["Google", "Trending", "New"],
-      heading: "Loudest à la Madison #1 (L'integral)",
+      heading: "Loudest à la Madison #1 (L,integral)",
       explanation:
-        "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+        "We focus on ergonomics and meeting you where you work. Its only a keystroke away.",
       time: "22 April 2021",
       comments: 10,
     },
@@ -613,6 +619,82 @@ function App() {
           </Grid>
         ))}
       </Grid>
+      {/* footer section */}
+      <Box
+        sx={{
+          padding: "3%",
+          background: " rgba(37, 43, 66, 1)",
+          color: "#fff",
+        }}
+      >
+        <Box sx={{ display: "flex", justifyContent: "space-around" }}>
+          <Box>
+            <Typography sx={{ fontSize: "20px", fontWeight: "bold" }}>
+              Consulting Agency For Your Business
+            </Typography>
+            <Typography>the quick fox jumps over the lazy dog</Typography>
+          </Box>
+          <Box>
+            <Button variant="contained">Contact Us</Button>
+          </Box>
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-around",
+            paddingTop: "5%",
+          }}
+        >
+          <Box>
+            <Box sx={sx.footerHeading}>Company Info</Box>
+            <Box>About Us</Box>
+            <Box>Carrier</Box>
+            <Box>We Are Hiring</Box>
+            <Box>Blog</Box>
+          </Box>
+          <Box>
+            <Box sx={sx.footerHeading}>Legal</Box>
+            <Box>About Us</Box>
+            <Box>Carrier</Box>
+            <Box>We Are Hiring</Box>
+            <Box>Blog</Box>
+          </Box>
+          <Box>
+            <Box sx={sx.footerHeading}>Features</Box>
+            <Box>Business marketing</Box>
+            <Box>User Analysis</Box>
+            <Box>Live Chat</Box>
+            <Box>Unlimited Support</Box>
+          </Box>
+          <Box>
+            <Box sx={sx.footerHeading}>Resourses</Box>
+            <Box>IOS & Android</Box>
+            <Box>Watch a Demo</Box>
+            <Box>Customers</Box>
+            <Box>API</Box>
+          </Box>
+          <Box>
+            <Box sx={sx.footerHeading}>Get In Touch</Box>
+            <Box><CallIcon fontSize=""/> (480) 555-0103</Box>
+            <Box><LocationOnIcon  fontSize=""/>4517 Washington Ave.</Box>
+            <Box><EmailIcon fontSize=""/>debra.holt@example.com</Box>
+           
+          </Box>
+        </Box>
+        <Box sx={{ display: "flex", justifyContent: "space-around",paddingTop:'5%' }}>
+          <Box>
+            <Typography>Made With Love By Finland All Right Reserved </Typography>
+          </Box>
+          <Box sx={{display:'flex',justifyContent:'space-between'}}>
+           <Box ><InstagramIcon fontSize="small" color="primary"/></Box>
+           <Box sx={sx.iconStyle}><FacebookIcon fontSize="small" color="primary"/></Box>
+           <Box sx={sx.iconStyle}><XIcon fontSize="small" color="primary"/></Box>
+          </Box>
+        </Box>
+      </Box>
+
+      
     </>
   );
 }
@@ -629,6 +711,14 @@ const sx = {
     display: "flex",
     color: "grey",
   },
+  footerHeading: {
+    fontSize: "16px",
+    fontWeight: "bold",
+    paddingBottom:'5%'
+  },
+  iconStyle:{
+    marginLeft:'25%'
+  }
 };
 
 export default App;
