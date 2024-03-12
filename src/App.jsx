@@ -12,12 +12,12 @@ import BestSellerCards from "./components/BestSellerCards";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import CommentIcon from "@mui/icons-material/Comment";
-import CallIcon from '@mui/icons-material/Call';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import EmailIcon from '@mui/icons-material/Email';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import XIcon from '@mui/icons-material/X';
+import CallIcon from "@mui/icons-material/Call";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import EmailIcon from "@mui/icons-material/Email";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import XIcon from "@mui/icons-material/X";
 import "./App.css";
 
 function App() {
@@ -363,6 +363,39 @@ function App() {
           </Box>
         </Box>
       </Box>
+      <Box sx={{ margin: "5%", display:'flex', }}>
+        <Box sx={{ display: "flex" , marginX:'5%' }}>
+          <Box sx={{ fontSize: "30px", color: "red" }}>1.</Box>
+          <Box>
+            <Box sx={{fontWeight:'bold',paddingBottom:'3%'}}>Easy To Use</Box>
+            <Box sx={{fontSize:'13px',color:'grey'}}>Things on a very small <br/> that you have any direct</Box>
+          </Box>
+        </Box>
+
+        <Box sx={{ display: "flex", marginX:'6%' }}>
+          <Box sx={{ fontSize: "30px", color: "red" }}>2.</Box>
+          <Box>
+            <Box sx={{fontWeight:'bold',paddingBottom:'3%'}}>Easy To Use</Box>
+            <Box sx={{fontSize:'13px',color:'grey'}}>Things on a very small <br/> that you have any direct</Box>
+          </Box>
+        </Box>
+
+        <Box sx={{ display: "flex", marginX:'6%' }}>
+          <Box sx={{ fontSize: "30px", color: "red" }}>3.</Box>
+          <Box>
+            <Box sx={{fontWeight:'bold',paddingBottom:'3%'}}>Easy To Use</Box>
+            <Box sx={{fontSize:'13px',color:'grey'}}>Things on a very small <br/> that you have any direct</Box>
+          </Box>
+        </Box>
+
+        <Box sx={{ display: "flex", marginX:'6%' }}>
+          <Box sx={{ fontSize: "30px", color: "red" }}>4.</Box>
+          <Box>
+            <Box sx={{fontWeight:'bold',paddingBottom:'3%'}}>Easy To Use</Box>
+            <Box sx={{fontSize:'13px',color:'grey'}}>Things on a very small <br/> that you have any direct</Box>
+          </Box>
+        </Box>
+      </Box>
       {/* Group 1 reverse */}
 
       <Box sx={{ marginX: "5%", display: "flex" }}>
@@ -676,25 +709,44 @@ function App() {
           </Box>
           <Box>
             <Box sx={sx.footerHeading}>Get In Touch</Box>
-            <Box><CallIcon fontSize=""/> (480) 555-0103</Box>
-            <Box><LocationOnIcon  fontSize=""/>4517 Washington Ave.</Box>
-            <Box><EmailIcon fontSize=""/>debra.holt@example.com</Box>
-           
+            <Box>
+              <CallIcon fontSize="" /> (480) 555-0103
+            </Box>
+            <Box>
+              <LocationOnIcon fontSize="" />
+              4517 Washington Ave.
+            </Box>
+            <Box>
+              <EmailIcon fontSize="" />
+              debra.holt@example.com
+            </Box>
           </Box>
         </Box>
-        <Box sx={{ display: "flex", justifyContent: "space-around",paddingTop:'5%' }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-around",
+            paddingTop: "5%",
+          }}
+        >
           <Box>
-            <Typography>Made With Love By Finland All Right Reserved </Typography>
+            <Typography>
+              Made With Love By Finland All Right Reserved{" "}
+            </Typography>
           </Box>
-          <Box sx={{display:'flex',justifyContent:'space-between'}}>
-           <Box ><InstagramIcon fontSize="small" color="primary"/></Box>
-           <Box sx={sx.iconStyle}><FacebookIcon fontSize="small" color="primary"/></Box>
-           <Box sx={sx.iconStyle}><XIcon fontSize="small" color="primary"/></Box>
+          <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+            <Box>
+              <InstagramIcon fontSize="small" color="primary" />
+            </Box>
+            <Box sx={sx.iconStyle}>
+              <FacebookIcon fontSize="small" color="primary" />
+            </Box>
+            <Box sx={sx.iconStyle}>
+              <XIcon fontSize="small" color="primary" />
+            </Box>
           </Box>
         </Box>
       </Box>
-
-      
     </>
   );
 }
@@ -714,11 +766,11 @@ const sx = {
   footerHeading: {
     fontSize: "16px",
     fontWeight: "bold",
-    paddingBottom:'5%'
+    paddingBottom: "5%",
   },
-  iconStyle:{
-    marginLeft:'25%'
-  }
+  iconStyle: {
+    marginLeft: "25%",
+  },
 };
 
 export default App;
